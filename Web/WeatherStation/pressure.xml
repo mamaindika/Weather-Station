@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<timeranges>
+  <timerange>
+    <todate>'2017-04-30 23:59:59'</todate>
+    <fromdate>'2018-01-30 23:59:59'</fromdate>
+  </timerange>
+</timeranges>

@@ -1,0 +1,30 @@
+#!/usr/bin/python
+# e begoli, python connector for mysql
+# import MySQL module
+import MySQLdb
+
+
+# connect
+
+
+
+def InsertTable():
+	db = MySQLdb.connect(host="localhost", user="root", passwd="123",db="WeatherStation")
+	# Prepare SQL query to INSERT a record into the database.
+	sql = """INSERT INTO MyGuests(firstname,lastname, email) VALUES ('indika', 'kumara','indika.1992411@gmail.com')"""
+
+	# create a database cursor
+	cursor = db.cursor()
+	try :
+		# execute SQL select statement
+		cursor.execute(sql)
+		# Commit your changes in the database
+		db.commit()
+	except :
+		# Rollback in case there is any error
+		db.rollback()
+
+ 	return 
+ 	
+#InsertTable()
+
